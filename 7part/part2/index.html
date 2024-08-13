@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Адаптивная верстка - практика</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h5>2023</h5>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="wrapper">
+            <div class="content">
+                <h2>2023</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, aliquam iure? Hic quisquam provident aut!</p>
+
+                <a href="#">Learn More</a>
+
+                <h5 class="socials">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-youtube"></i>
+                </h5>
+                
+            </div>
+        </div>
+    </div>
+    
+<!--    JS добавлен для работы меню мобильной верстки-->
+    <script>
+        const sidenav = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+
+            menu.addEventListener('click', () => {
+               menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        }
+        sidenav();
+    </script>
+</body>
+</html>

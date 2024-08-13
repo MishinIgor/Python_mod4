@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2b2d42;
+  }
+  
+  h1 {
+    color: #edf2f4;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
+}
+    
+h1:hover {
+    text-shadow: -3px -3px 3px rgba(255,255,255,0.4),
+    -5px -5px 5px rgba(255,255,255,0.3),
+    -7px -7px 7px rgba(255,255,255,0.2),
+    -9px -9px 9px rgba(255,255,255,0.1),
+    5px 5px 5px rgba(0,0,0,0.3);
+    transform: rotateX(30deg) rotateY(0deg);
+}
+    
+p {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+  

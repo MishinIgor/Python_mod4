@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+}
+.box:hover {
+    color: black;
+    background-color: pink;
+    transition: 0.6s ease-in;
+}
+.box-1 {
+    background-color: #7F8C8D;
+}
+
+.box-2 {
+    background-color: #27AE60;
+}
+
+.box-3 {
+    background-color: #3498DB;
+}
+
+.box-4 {
+    background-color: #F1C40F;
+}
+
+.box-5 {
+    background-color: #E74C3C;
+}
+
+.b-6 {
+    background-color: #000000;
+}

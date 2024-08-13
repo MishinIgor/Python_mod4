@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+  }
+  
+  img {
+    width: 300px;
+    height: auto;
+    display: block;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000, 5px 5px 0 #000, 6px 6px 0 #000, 7px 7px 0 #000, 8px 8px 0 #000;
+    transition: all 0.5s ease;
+  }
+  
+  h1:hover {
+    text-shadow: 1px 1px 0 #fff, 2px 2px 0 #fff, 3px 3px 0 #fff, 4px 4px 0 #fff, 5px 5px 0 #fff, 6px 6px 0 #fff, 7px 7px 0 #fff, 8px 8px 0 #fff, 9px 9px 0 #fff, 10px 10px 0 #fff, 11px 11px 0 #fff, 12px 12px 0 #fff, 13px 13px 0 #fff, 14px 14px 0 #fff, 15px 15px 0 #fff;
+    transform: translate(-50%, -50%) rotateX(90deg) rotateY(30deg);
+  }
+  

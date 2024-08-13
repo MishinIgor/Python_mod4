@@ -1,0 +1,52 @@
+.frame {
+    display: table;
+    background-color: aquamarine;
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 10%;
+}
+
+.footer {
+    display: table-footer-group;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: brown;
+}
+
+.left_nav{
+    width: 10%;
+    height: 90%;
+    background-color: cadetblue;
+    float: left;
+}
+
+.main_contents  {
+    color: wheat;
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    float: right;
+}
+
+.main_contents ul {
+    width: 140px;
+    color: blueviolet;
+}
+
+.main_contents ul li:hover {
+    background-color: azure;
+    color: chartreuse;
+    border-radius: 5px;
+    transition: 0.6s ease ease-in-out;
+}
+
+ul:hover {
+    font-size: 35px;
+}

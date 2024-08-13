@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: all 0.5s ease;
+}
+
+.container:hover h1 {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 50px rgba(255, 255, 255, 0.4), 0 0 80px rgba(255, 255, 255, 0.2), 0 0 150px rgba(255, 255, 255, 0.1);
+  transform: translateY(-20px) rotateX(40deg);
+}
