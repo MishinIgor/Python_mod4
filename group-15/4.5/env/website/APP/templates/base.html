@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} Мой сайт {% endblock %} </title>
+    <style>
+        header{
+            display: block;
+            background-image: url(https://avatars.mds.yandex.net/i?id=dc7bd680db83765387cf5466663cedd9661e26f8-5344395-images-thumbs&n=13);
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мой сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about_us">О нас</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content%}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy;  2024 Мой сайт </p>
+    </footer>
+</body>
+</html>
