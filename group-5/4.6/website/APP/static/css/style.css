@@ -1,0 +1,21 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1
+{
+    color: navy;
+}
+a{
+    color: burlywood;
+}
+img
+{
+    width: 350px;
+    height: 350px;
+}
+a:hover {
+    color: brown;
+    font-size: 35px;
+    transition: 0.6s ease-in-out;
+}

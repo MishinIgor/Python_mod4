@@ -1,0 +1,28 @@
+body{ 
+    font-family: Verdana;
+}
+h1{
+    color:navy;
+}
+img{
+    width:150px; 
+    height: 100px;
+}
+img:hover{
+    width: 500px;
+    height: 450px;
+    transition: 0.4s ease-in;
+}
+a {
+    margin: 30px;
+    color: aqua;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+a:hover {
+    color: blueviolet;
+    font-size: 18px;
+    text-decoration: line-through;
+    transition: 0.6s ease-in-out;
+}
