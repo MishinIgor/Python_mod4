@@ -1,10 +1,12 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block title%} Зимний лес {%endblock%}
 
 {%block content%}
+<img src="{% static "images/forest.jpg" %}" alt="зимний лес" >
 <h1>Зимний лес</h1>
 <p> Понимаю, не выглядит как зимний. Но где же ваша фантазия?</p>
-<a href="download_file/">Скачать файл</a>
-<a href="download_image/">Скачать картинку</a>
+
+<a href="/">Главная</a>
+<a href="new_page/">Новая страница</a>
 {%endblock%}
