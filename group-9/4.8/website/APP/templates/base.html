@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Создать профиль</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+      <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="">
+               <h3>Компания</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto me-5">
+                  <li class="nav-item">
+                     <a class="nav-link" href="">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="">Обо мне</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="">Контакты</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <main id="main" class="content">
+         {% block content %}{% endblock %}
+      </main>
+      <footer class="footer" role="contentinfo">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6">
+                  <p class="mb-1">&copy; {% now "Y" %} Компания</p>
+               </div>
+               <div class="col-sm-6 social text-md-end">
+                  <a href="#"><span class="bx bxl-telegram"></span></a>
+                  <a href="#"><span class="bx bxl-github"></span></a>
+                  <a href="#"><span class="bx bxl-stack-overflow"></span></a>
+                  <a href="#"><span class="bx bxl-linkedin"></span></a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+   </body>
+</html>

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+   <div class="row">
+      <div class="col-md-4 offset-md-4">
+         <h3 class="text-center mt-5 mb-5 text-muted">Заполните форму</h3>
+         <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% if messages %}
+            <ul class="list-unstyled">
+               {% for message in messages %}
+               <li{% if message.tags %} class="text-danger"{% endif %}>{{ message }}</li>
+               {% endfor %}
+            </ul>
+            {% endif %}
+            <div class="row g-3">
+               <div class="col-md-6">
+                  <label for="{{ form.first_name.auto_id }}" class="form-label">{{ form.first_name.label }}</label>
+                  {{ form.first_name }}
+               </div>
+               <div class="col-md-6">
+                  <label for="{{ form.last_name.auto_id }}" class="form-label">{{ form.last_name.label }}</label>    
+                  {{ form.last_name }}
+               </div>
+            </div>
+            <div class="mt-3 mb-3">
+               <label for="{{ form.photo.auto_id }}" class="form-label">{{ form.photo.label }}</label>
+               {{ form.photo }}
+            </div>
+            <div class="input-group mb-3">
+               <span class="input-group-text">@ник в Телеграме</span>
+               {{ form.telegram }}
+            </div>
+            <div class="row g-3">
+               <div class="col-md-6">
+                  <label for="{{ form.city.auto_id }}" class="form-label">{{ form.city.label }}</label>
+                  {{ form.city }}
+               </div>
+               <div class="col-md-6">
+                  <label for="{{ form.profession.auto_id }}" class="form-label">{{ form.profession.label }}</label>
+                  {{ form.profession }}
+               </div>
+            </div>
+            <div class="mt-3 mb-3">
+               <label for="{{ form.bio.auto_id }}" class="form-label">{{ form.bio.label }}</label>
+               {{ form.bio }}
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg w-100 mt-3 mb-5">Сохранить</button>
+         </form>
+      </div>
+   </div>
+</div>
+{% endblock %}

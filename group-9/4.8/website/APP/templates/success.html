@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-header bg-primary">
+                        Получилось!
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Данные успешно сохранены!</p>
+                        <a href="{% url 'profile' %}" class="btn btn-primary">Создать новый профиль</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
