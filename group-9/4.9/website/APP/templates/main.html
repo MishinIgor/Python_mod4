@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Моя компания{% endblock title %}
+
+{% block content %}
+<h1>Добро пожаловать на наш сайт! </h1>
+<p> мы рады приветствовать вас на страицах нашего виртуального пространства. <br>
+    Здесь вы найдёте множество полезной информации, увлекательной статей, <br>
+    новостей и других интересных материалов. </p>
+
+<h2> Форма для связи с нами </h2>
+<form method="POST">
+{% csrf_token %}
+{{form.as_p}}
+<button type="submit" class="pulser"> Отправить </button>
+
+</form>
+{% endblock content %}

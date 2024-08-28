@@ -671,7 +671,7 @@ urlpatterns = [
     {% if messages %}
     <ul class="list-unstyled">
        {% for message in messages %}
-       <li{% if message.tags %} class="text-danger"{% endif %}>{{ message }}</li>
+       <li> {% if message.tags %} class="text-danger"{% endif %}>{{ message }}</li>
        {% endfor %}
     </ul>
     {% endif %}
