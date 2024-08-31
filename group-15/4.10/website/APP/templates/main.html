@@ -1,0 +1,18 @@
+{% extends "base15gr.html" %}
+{% load static %}
+
+{% block title %}MainPage{% endblock title %}
+
+
+{% block form %}
+<h3> Заполните форму и выберите предметы для засчисления на курс. </h3>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit"> Отправить </button>
+</form>
+{% endblock form %}
+
+{% block photo %}
+<img src="{% static "image15gr/happy_student.png" %}" />
+{% endblock photo %}

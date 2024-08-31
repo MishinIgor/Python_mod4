@@ -1,0 +1,91 @@
+#frame
+{
+    width: 1200px; /* ширина */
+    background-color: rgb(38, 41, 41); /* цвет фона */
+    margin: auto; /* Выравнивание по центру */
+    display: table; /* Отображение в табличной форме представление в форме таблицы) */
+    height: 100%; /* высота */
+}
+
+#header
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width:940px; /* ширина */
+    height: 70px; /* высота */
+    background-color: white; /* цвет фона */
+    margin: auto; /* Выравнивание по центру */
+    margin-top: auto; /* Отступ от верхней границы сайта */
+    padding: 20px; /* внутренний отступ */
+    margin-bottom: auto;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+#header p {
+    margin-bottom: 15px;
+}
+
+#footer
+{
+    display: table-footer-group;
+    width: 950px;
+    height: 50px;
+    background-color: darkgreen;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+#content
+{
+    display: flex;
+    width: 700px;
+    height: 500px;
+    background-color: yellow;
+    margin: 25px;
+    float: left;
+}
+.box {
+    font-size: 16px;
+    color: blueviolet;
+    
+}
+.form {
+    margin: auto;
+    border: 2px solid black;
+}
+.photo
+{
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    margin: 15px;
+    float: right;
+}
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+#menu
+{
+    background: yellowgreen;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: "Arial Black";
+    text-align: center;
+}
+#inMenu
+{
+    width: 200px;
+    float: left;
+    background: rgb(210, 243, 149);
+    margin: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+#inMenu a
+{
+    display: block;
+}

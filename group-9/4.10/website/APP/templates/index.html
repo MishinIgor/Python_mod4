@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="Stylesheet" type="text/css" href="{% static "css/mystyle.css" %}">
+</head>
+<body>
+    <div id="frame">
+        <div id="header">
+            {% block header %}
+            {% endblock header %}
+        </div>
+        <div id="menu">
+            <a href="/">Главная страница</a>
+            <a href="">Контакты</a>
+        </div>
+
+        <div id="inMenu">
+            Описание
+            <a href="/python">Python</a>
+            <a href="/js">JS</a>
+            <a href="/cpp">C++</a>
+        </div>
+        <div id="content">
+            <div class="my_form">
+            {% block my_form %}
+            {% endblock my_form %}
+        </div>
+        <div class="inform">
+            {% block inform %}
+            {% endblock inform %}
+        </div>
+        </div>
+        <div id="photo">
+            {% block photo %}
+            {% endblock photo %}
+        </div>
+        <div id="footer">Сайт сделан при поддержке группы №9, <br>
+            на самом последнем занятии всего 4ого модуля и курсов в целом!!!</div>
+    </div>
+</body>
+</html>

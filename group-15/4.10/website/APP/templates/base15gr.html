@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="Stylesheet" href="{% static "css15gr/new_style15gr.css" %}">
+</head>
+<body>
+    <div id="frame">
+        <div id="header">
+            <p> Добро пожаловать на наш сайт. <br>
+            У нас вы сможете выбрать курс для обучения заполнив форму <br>
+            А также ознакомиться с информацией о каждом из курсов в левой панели</p>
+        </div>
+        <div id="menu">
+            <a href="">Главная страница</a>
+            <a href="">Наша фирма</a>
+            <a href="">Контакты</a>
+        </div>
+
+        <div id="inMenu">
+        <ul>
+            Информация о предмете:
+            <li><a href="python/">Python</a></li>
+            <li><a href="">JavaScript</a></li>
+            <li><a href="">Математика</a></li>
+        </ul>
+        </div>
+        <div id="content">
+            <div class="box  inform">
+                {% block inform %}
+                {% endblock inform %}
+            </div>
+
+            <div class="box  form">
+                <div class="form">
+                    {% block form %}
+                    {% endblock form %}
+                </div>
+            </div>
+        </div>
+
+        <div class="photo">
+            {% block photo %}
+            {% endblock photo %}
+        </div>
+
+        <div id="footer">
+            <p> Сайт был создан при поддержке группы №15, которая останется в моём сердце на долгие годы!</p>
+        </div>
+    </div>
+</body>
+</html>

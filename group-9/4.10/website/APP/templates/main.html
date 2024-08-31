@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block header %}
+<h1>Добро пожаловать на наш сайт</h1>
+<p> Слева вы можете выбрать предмет для ознакомления, <br>
+    а на главной странице заполнить форму для обучения <br>
+    и зачисления на курс</p>
+{% endblock header %}
+
+{% block title %} Главная {% endblock title %}
+
+{% block my_form %}
+<form method="POST">
+{% csrf_token %}
+{{form.as_p}}
+<button type="submit"> Отправить </button>
+</form>
+{% endblock my_form %}
+
+{% block photo %}
+<img src="{% static "images/main_students.png" %}" />
+{% endblock photo %}

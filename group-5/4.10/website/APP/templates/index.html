@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="Stylesheet" type="text/css" href="{% static "css/style_my.css" %}">
+</head>
+<body>
+    <div id="frame">
+        <div id="header">=-)</div>
+        <div id="menu">
+            <a href="/">Главная страница</a>
+            <a href="">Предметы</a>
+            <a href="">Контакты</a>
+        </div>
+
+        <div id="inMenu">
+            <b> Информация </b>
+            <a href="/python">Python</a>
+            <a href="/js">JavaScript</a>
+            <a href="/math">Математика</a>
+        </div>
+
+        <div id="content">
+
+            <div class="inform">
+                {% block inform %}
+                {% endblock inform %}
+            </div>
+
+            <div class="my_form">
+                {% block my_form %}
+                {% endblock my_form %}
+            </div>
+
+        </div>
+
+        <div id="sidebar">
+            {% block photo %}
+            {% endblock photo %}
+        </div>
+
+        <div id="footer">q10sn1k</div>
+    </div>
+</body>
+</html>

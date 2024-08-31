@@ -1,0 +1,90 @@
+#frame
+{
+    width: 1000px; /* ширина */
+    background-color: aqua; /* цвет фона */
+    margin: auto; /* Выравнивание по центру */
+    display: table; /* Отображение в табличной форме представление в форме таблицы) */
+    height: 900px; /* высота */
+}
+
+#header
+{
+    width:940px; /* ширина */
+    height: 50px; /* высота */
+    background-color: rgb(31, 24, 16); /* цвет фона */
+    margin: auto; /* Выравнивание по центру */
+    margin-top: 10px; /* Отступ от верхней границы сайта */
+    padding: 20px; /* внутренний отступ */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+#footer
+{
+    display: table-footer-group;
+    width: 950px;
+    height: 40px;
+    background-color: darkgreen;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+#content
+{
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    margin: 25px;
+    float: left;
+}
+#sidebar
+{
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    margin: 15px;
+    float: right;
+}
+#sidebar img {
+    width: 100%;
+    height: 100%;
+}
+#menu
+{
+    background: yellowgreen;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: "Arial Black";
+    text-align: center;
+}
+#inMenu
+{
+    float: left;
+    background: rgb(11, 94, 120);
+    padding: 15px;
+    margin: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+#inMenu a
+{
+    display: block;
+}
+.my_form 
+{
+    color: burlywood;
+    font-family: 'Times New Roman', Times, serif;
+}
+.inform
+{
+    color: green;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content h1:hover {
+    color: red;
+}

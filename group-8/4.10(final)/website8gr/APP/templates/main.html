@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Мой веб-сайт {% endblock title %}
+
+{% block form %}
+<form method "POST">
+{% csrf_token %}
+{{form.as_ul}}
+<button type="submit"> Отправить </button>
+</form>
+{% endblock form %}
+
+{% block photo %}
+<img src="{% static "images8gr/main_photo.png" %}" alt="">
+{% endblock photo %}

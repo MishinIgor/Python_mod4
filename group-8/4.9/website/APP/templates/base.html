@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock title %}</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}" />
+    <link rel="stylesheet" href="{% static "css/style.css" %}" />
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="{% static "images/logo.jpg" %}" alt="my_logo">
+            <img src="{% static "images/my_logotip.jpg" %}" alt="my_logo">
         </div>
+        <div class="frame_buttons">
         <button><a href="/">Главная</a></button>
         <button><a href="/about_us">о нас</a></button>
         <button><a href="/contacts">Контакты</a></button>
+        </div>
     </header>
     {% block content %}
     {% endblock content %}

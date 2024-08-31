@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="Stylesheet" href="{% static "css8gr/new_style.css" %}" />
+</head>
+<body>
+    <div id="frame">
+        <div id="header">
+            <p>Добро пожаловать на наш сайт! На главной вы увидете перед собой форму, <br>
+                заполнив которую и отправив нам, вы дадите согласие на прохождение курсов и обработку персональных данных. <br>
+                Спасибо, что доверяете нам Ваши знания!</p>
+        </div>
+        <div id="menu">
+            <a href="">Главная страница</a>
+            <a href="">Предметы</a>
+            <a href="">Контакты</a>
+        </div>
+
+        <div id="inMenu">
+            <p>Наш состав <br> и предметы</p>
+            <a href="">Информатика</a>
+            <a href="">Физика</a>
+            <a href="">Математика</a>
+        </div>
+        <div id="content">
+            <div class="content_form">
+            {% block form %}
+            
+            {% endblock form %}
+            </div>
+            <div class="content_inner">
+                {% block content %}
+                
+                {% endblock content %}
+            </div>
+        </div>
+        <div id="sidebar">{% block photo %}
+            {% endblock photo %}</div>
+        <div id="footer">Сайт выполнен при поддержке группы №8! Всей группе огромный привет!</div>
+    </div>
+</body>
+</html>
